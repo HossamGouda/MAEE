@@ -1,0 +1,104 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  font-weight: 500;
+}
+
+img,
+picture,
+video,
+svg {
+  max-width: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: "Cairo", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--brand_color_five--);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("https://maee.gov.sa/branding/images/SVG/pater.svg");
+}
+
+canvas {
+  display: block;
+  margin: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  width: 40%;
+}
+
+.secret-holder {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+footer p {
+  margin-top: 2rem;
+  opacity: 0.7;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  canvas {
+    width: 970px;
+    height: 970px;
+  }
+}
+
+/* Large */
+
+@media (min-width: 1200px) {
+  canvas {
+    width: 800px;
+  }
+}
+
+@media (min-width: 698px) {
+  canvas {
+    width: 400px !important;
+    height: 400px !important;
+  }
+}
