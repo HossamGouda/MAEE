@@ -58,8 +58,8 @@ canvas {
   max-height: 100%;
 }
 
-a {
-  width: 40%;
+button {
+  cursor: pointer;
 }
 
 .secret-holder {
