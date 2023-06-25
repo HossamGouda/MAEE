@@ -59,7 +59,7 @@ canvas {
 }
 
 button {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .secret-holder {
