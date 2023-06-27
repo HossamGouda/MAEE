@@ -5,7 +5,7 @@ var downloadBtn = document.getElementById("download-btn");
 
 var image = new Image();
 image.crossOrigin = "anonymous";
-image.src = "./maee.png";
+image.src = "https://i.ibb.co/qM9BjSK/maee.png";
 image.onload = function () {
   drawImage();
 };
@@ -28,7 +28,7 @@ downloadBtn.addEventListener("click", function downladDrw() {
   const allowExport = confirm("Allow exporting canvas image?");
   if (allowExport) {
     const link = document.createElement("a");
-    link.href = canvas.toDataURL("image/png"); // Set the image data as the link URL
+    link.href = canvas.toDataURL("image/jpg"); // Set the image data as the link URL
     link.download = "Congrates - " + nameInput.value; // Set the desired file name
     link.click();
   } else {
