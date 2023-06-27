@@ -25,8 +25,13 @@ nameInput.addEventListener("input", function () {
 });
 
 downloadBtn.addEventListener("click", function downladDrw() {
-  const link = document.createElement("a");
-  link.href = canvas.toDataURL("image/png"); // Set the image data as the link URL
-  link.download = "Congrates - " + nameInput.value; // Set the desired file name
-  link.click();
+  const allowExport = confirm("Allow exporting canvas image?");
+  if (allowExport) {
+    const link = document.createElement("a");
+    link.href = canvas.toDataURL("image/png"); // Set the image data as the link URL
+    link.download = "Congrates - " + nameInput.value; // Set the desired file name
+    link.click();
+  } else {
+    console.log("Export canceled by the user.");
+  }
 });
